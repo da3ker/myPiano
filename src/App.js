@@ -1,14 +1,49 @@
-import "./App.scss";
 import "./cube.scss";
 import Cube from "./Cube";
 import Piano from "./components/piano";
+import ControlBox from "./components/controlBox";
+import Recording from "./components/recording";
+import { useState } from "react";
+import Store from "./Store";
 
 function App() {
+  const [volume, setVolume] = useState(1);
+  const [songNotes, setSongNotes] = useState([]);
+  const [startRecord, setStartRecord] = useState();
+
+  const dots = [];
+  for (let i = 1; i <= 608; i++) {
+    dots.push(<span id={i} key={i} />);
+  }
+
+  const refreshPage = () => {
+    window.location.reload(false);
+  };
+
   return (
-    <div className="App w-screen h-screen flex justify-center items-center bg-neutral-900">
-      <Piano />
-      <Cube />
-    </div>
+    <Store>
+      <div className="App w-screen h-screen flex flex-col justify-center items-center min-w-fit bg-neutral-900">
+        <div className="container absolute w-full h-full flex flex-wrap">
+          {dots}
+        </div>
+        <Recording />
+        <Piano
+          volume={volume}
+          songNotes={songNotes}
+          setSongNotes={setSongNotes}
+          startRecord={startRecord}
+        />
+        <ControlBox
+          volume={volume}
+          setVolume={setVolume}
+          refreshPage={refreshPage}
+          songNotes={songNotes}
+          setSongNotes={setSongNotes}
+          setStartRecord={setStartRecord}
+        />
+        <Cube />
+      </div>
+    </Store>
   );
 }
 
