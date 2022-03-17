@@ -2,7 +2,6 @@ import "./cube.scss";
 import Cube from "./Cube";
 import Piano from "./components/piano";
 import ControlBox from "./components/controlBox";
-import Recording from "./components/recording";
 import { useState } from "react";
 import Store from "./Store";
 
@@ -26,7 +25,7 @@ function App() {
         <div className="container absolute w-full h-full flex flex-wrap">
           {dots}
         </div>
-        <Recording />
+
         <Piano
           volume={volume}
           songNotes={songNotes}

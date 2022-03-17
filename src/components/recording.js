@@ -6,7 +6,7 @@ const Recording = () => {
   const [recording] = useContext(Context);
 
   return (
-    <div className="recording w-1/3 h-8 min-w-[200px] bg-transparent rounded text-xs font-semibold m-1 px-1 text-lime-50 overflow-auto z-20">
+    <div className="recording w-full h-8 bg-transparent rounded text-xs font-semibold mb-1 px-1 text-lime-50 overflow-auto z-20">
       {recording}
     </div>
   );
