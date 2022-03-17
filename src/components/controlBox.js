@@ -67,7 +67,7 @@ const ControlBox = ({
 
   return (
     <div className="control-box w-1/3 min-w-[195px] h-1/5 flex flex-col items-center z-1 mt-1 text-sm text-gray-200 font-semibold tracking-widest">
-      <div className="buttons flex justify-between w-full mt-2 font-mono ">
+      <div className="buttons flex justify-between w-full mt-2 font-mono text-xs sm:text-sm ">
         <button className={`z-10 font-bold p-2 ${isOn}`} onClick={record}>
           <span></span>
           <span></span>

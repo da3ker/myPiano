@@ -254,3 +254,9 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -6.5px;
 }
+
+@media (hover: none) {
+  .container {
+    display: none;
+  }
+}

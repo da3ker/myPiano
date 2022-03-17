@@ -49,7 +49,9 @@ const Keys = ({ pad, volume, songNotes, startRecord }) => {
       onClick={playSound}
     >
       <audio className="key" id={pad.keyTrigger} src={pad.audio}></audio>
-      <code className="text-xs font-semibold">{pad.keyTrigger}</code>
+      <code className="text-[8px] sm:text-xs font-semibold">
+        {pad.keyTrigger}
+      </code>
       <code>{pad.id}</code>
     </div>
   );
