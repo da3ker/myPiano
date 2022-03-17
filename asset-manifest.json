@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myPiano/static/css/main.9edd14bc.css",
-    "main.js": "/myPiano/static/js/main.30193c7c.js",
+    "main.css": "/myPiano/static/css/main.3e3bfc8f.css",
+    "main.js": "/myPiano/static/js/main.c55eb267.js",
     "static/js/787.bcf12da4.chunk.js": "/myPiano/static/js/787.bcf12da4.chunk.js",
     "static/media/Bb.mp3": "/myPiano/static/media/Bb.ee14cec1950416f87f9e.mp3",
     "static/media/C.mp3": "/myPiano/static/media/C.11c6e514d9bfea727e52.mp3",
@@ -16,12 +16,12 @@
     "static/media/D.mp3": "/myPiano/static/media/D.2f57fa428eb007af60c0.mp3",
     "static/media/Db.mp3": "/myPiano/static/media/Db.2f6a2c5f3a280a478f9d.mp3",
     "index.html": "/myPiano/index.html",
-    "main.9edd14bc.css.map": "/myPiano/static/css/main.9edd14bc.css.map",
-    "main.30193c7c.js.map": "/myPiano/static/js/main.30193c7c.js.map",
+    "main.3e3bfc8f.css.map": "/myPiano/static/css/main.3e3bfc8f.css.map",
+    "main.c55eb267.js.map": "/myPiano/static/js/main.c55eb267.js.map",
     "787.bcf12da4.chunk.js.map": "/myPiano/static/js/787.bcf12da4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9edd14bc.css",
-    "static/js/main.30193c7c.js"
+    "static/css/main.3e3bfc8f.css",
+    "static/js/main.c55eb267.js"
   ]
 }
