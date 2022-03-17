@@ -5,7 +5,7 @@ import Recording from "./recording";
 
 const Piano = ({ volume, setSongNotes, songNotes, startRecord }) => {
   return (
-    <div className=" min-w-fit flex flex-col w-1/3 h-1/2 z-10 ">
+    <div className=" min-w-min flex flex-col w-1/3 h-1/2 z-10 ">
       <Recording />
       <div className="piano min-w-fit flex justify-center rounded-b-lg w-full h-[calc(100%_-_2rem)] z-10">
         {notes.map((pad) => (
